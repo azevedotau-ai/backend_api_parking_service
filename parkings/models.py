@@ -44,7 +44,7 @@ class ParkingRecord(models.Model):
         verbose_name='Veículo'
     )
 
-    parking_sport = models.ForeignKey(
+    parking_spot = models.ForeignKey(
         ParkingSpot,
         on_delete=models.PROTECT,
         blank=True,

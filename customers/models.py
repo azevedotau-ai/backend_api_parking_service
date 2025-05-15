@@ -21,6 +21,7 @@ class Customer(models.Model):
         max_length=20,
         blank=True,
         null=True,
+        unique=True,
         verbose_name="Bilhete de Identidade"
     )
 
