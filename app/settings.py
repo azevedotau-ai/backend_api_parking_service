@@ -125,6 +125,9 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/5.2/howto/static-files/
 
 STATIC_URL = 'static/'
+STATICFILES_DIRS = [BASE_DIR / "static"]
+STATIC_ROOT = BASE_DIR / "staticfiles"
+
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field
@@ -239,10 +242,10 @@ JAZZMIN_SETTINGS = {
         "auth.Group": "fas fa-users",
 
         "vehicles.Vehicle": "fa-solid fa-car",
-        "vehicles.VehicleType": "fa-solid fa-car-on",
-        "parkings.ParkingSpot": "fa-solid fa-location-pin",
+        "vehicles.VehicleType": "fa-solid fa-car-side",
+        "parkings.ParkingSpot": "fa-solid fa-boxes-packing",
         "parkings.ParkingRecord": "fa-solid fa-square-parking",
-        "customers.Customer": "fa-solid fa-person"
+        "customers.Customer": "fa-solid fa-wallet",
     },
     # Icons that are used when one is not manually specified
     "default_icon_parents": "fas fa-chevron-circle-right",
